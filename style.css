@@ -28,7 +28,7 @@ body {
   }
   
   h1{
-    font-size: 7em;
+    font-size: 6em;
     line-height: normal;
   }
 
@@ -78,7 +78,7 @@ body {
   }
   
   .card-content {
-    padding: 1rem;
+    padding: 0.6rem;
   }
   
   .card-content h3 {
