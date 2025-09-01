@@ -1,88 +1,576 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Student Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Diya Kamalabharathy — Portfolio</title>
+  <meta name="description" content="Portfolio of Your Name — projects, writing, and ways to get in touch." />
+  <meta property="og:title" content="Diya Kamalabharathy — Portfolio" />
+  <meta property="og:description" content="Projects, writing, and contact." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/og-image.png" />
+  <meta name="theme-color" content="#0ea5e9" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Inter font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css" />
 </head>
-<body>
-  <header>
-    <h1>DIYA KAMALABHARATHY</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+<body class="font-body bg-white text-zinc-900 selection:bg-sky-200/60 selection:text-zinc-900">
+  <!-- Top gradient glow -->
+  <div class="pointer-events-none fixed inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl">
+    <div class="relative left-[50%] aspect-[1155/678] w-[72.1875rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-sky-300 to-indigo-300 opacity-40"></div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/70 bg-white/90 border-b border-zinc-200">
+    <nav class="mx-auto max-w-6xl px-4 md:px-6">
+      <div class="flex h-16 items-center justify-between">
+        <a href="#home" class="group inline-flex items-center space-x-2">
+          <div class="h-8 w-8 rounded-xl bg-gradient-to-br from-sky-500 to-indigo-500 shadow-glow"></div>
+          <span class="font-display text-lg font-semibold tracking-tight">Diya Kamalabharathy</span>
+        </a>
+        <div class="flex items-center gap-6">
+          <a href="#home" class="text-sm font-medium text-zinc-700 hover:text-sky-700">Home</a>
+          <a href="#projects" class="text-sm font-medium text-zinc-700 hover:text-sky-700">Projects</a>
+          <a href="#awards" class="text-sm font-medium text-zinc-700 hover:text-sky-700">Awards</a>
+          <a href="#leadership" class="text-sm font-medium text-zinc-700 hover:text-sky-700">Leadership</a>
+          <a href="#volunteering" class="text-sm font-medium text-zinc-700 hover:text-sky-700">Volunteering</a>
+          <a href="#contact" class="text-sm font-medium text-zinc-700 hover:text-sky-700">Contact</a>
+          <button id="themeToggle" class="rounded-xl border border-zinc-200 px-3 py-1.5 text-sm font-medium hover:border-zinc-300">
+            🌙 <span class="sr-only">Toggle theme</span>
+          </button>
+        </div>
+      </div>
     </nav>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <div>I'm Diya and I am a high-achieving and motivated high school senior at Poolesville High School with strong leadership skills. 
-    I am passionate about conducting biological research using AI and computational tools. Over the past few years, I have worked on designing apps and conducting research which combine
-  my interests in biology and computer science. </p>
-  </div>
-  <div style="align-self: center;"><img src="images/diya.jpg" /></p>
-  </div></section>
+  <!-- Hero -->
+  <section id="home" class="relative">
+    <div class="absolute inset-0 -z-10 gradient-accent"></div>
+    <div class="mx-auto max-w-6xl px-4 md:px-6">
+      <div class="flex min-h-[60vh] flex-col items-start justify-center py-16 md:py-24">
+        <div class="grid items-start gap-10 md:grid-cols-6">
+            <div class="md:col-span-4">
+                <p class="mb-4 text-sm uppercase tracking-[0.2em] text-zinc-600">Portfolio</p>
+                <h1 class="max-w-3xl text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl md:text-6xl">
+                <span class="bg-gradient-to-r from-sky-600 to-indigo-600 bg-clip-text text-transparent">Diya Kamalabharathy</span>
+                </h1>
+                <p class="mt-4 max-w-4xl text-lg">
+                    High-achieving and Motivated High School Senior with Strong Leadership Skills
+                    <br/>CPR Certified
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-container">
-        <div class="project-card">
-          <img style="height:30%" src="images/aptamer.jpg" alt="Project 1 screenshot">
-            <div class="card-content">
-            <h3>AI-Mediated Computational Analysis of Bispecific RNA-Based Aptamers Targeting the Transferrin Receptor of Blood Brain Barrier and EpCAM in Glioblastoma</h3>
-            <p>Systemized analysis of bispecific RNA-based Aptamers targeting the Transferrin Receptor of Blood Brain Barrier and EpCAM in Glioblastoma using Artificial Intelligence based tools. Model TfR and EpCAM receptor structures using AlphaFold 3.</p>
-          
-            <a href="https://southernmarylandchronicle.com/2025/03/24/st-marys-hosts-regional-jshs-sends-5-to-nationals/" target="_blank">
-              Scientific Research Paper – Under Peer Review
-            </a>
+                </p>
+                <p class="mt-4 max-w-4xl text-lg">
+                    <span class="font-medium">Interests:</span>, <span class="font-medium">Computational Biology</span>, <span class="font-medium">AI</span> and <span class="font-medium">Research</span>.
+                </p>
+                <div class="mt-8 flex flex-wrap gap-3">
+                <a href="#projects" class="rounded-xl bg-sky-600 px-5 py-2.5 text-white shadow hover:bg-sky-700">See my projects</a>
+                <a href="images/Diya Kamalabharathy_Resume_College_FINALdocx.pdf" target="_blank" class="rounded-xl border border-zinc-400 px-4 py-2 hover:border-zinc-600">Download Resume</a>
+                <a href="https://www.linkedin.com/in/diya-kamalabharathy-62557935a" target="_blank" rel="noopener" class="rounded-xl border border-zinc-400 px-4 py-2 hover:border-zinc-600">LinkedIn</a>
+                <a href="#contact" class="rounded-xl border border-zinc-400 px-5 py-2.5 hover:border-zinc-600">Get in touch</a>
+                </div>
+                <div class="mt-8 flex flex-wrap items-center gap-3 text-sm text-zinc-600">
+                <span class="inline-flex items-center gap-2 rounded-full border border-zinc-200 px-3 py-1">📍 Based in Maryland, USA</span>
+                
+                </div>
+            </div>
+            <aside class="md:col-span-2">
+                <div class="overflow-hidden rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
+                <h3 class="text-lg font-semibold">Highlights</h3>
+                <ul class="mt-4 space-y-3 text-sm text-zinc-700">
+                    <li>🏢 Intern at GW University and UMBC</li>
+                    <li>🩺 Clinical Intern</li>
+                    <li>📄 Student Researcher </li>
+                    <li>🏛️ Vice President - HOSA State Office</li>
+                    <li>🏛️ Vice President - NHS School Club</li>
+                    <li>💻 App Developer</li>  
+                    <li>🏥 Avid Volunteer</li>
+                    <li>🎹 Private Piano Instructor</li>              
+                    <li>🥋 Self-defense Advocate</li>
+                    <!--<li>💃 Versatile Dancer</li> -->
+                </ul>
+                </div>
+            </aside>
           </div>
-        </div>
-    
-        <div class="project-card">
-          <img style="height:30%" src="images/asktrack.jpg" alt="Project 2 screenshot">
-          <div class="card-content">
-            <h3>Astrack Mobile App</h3>
-            <p>Design a comprehensive mobile app to manage and mitigate Asthma by monitoring internal and external risk factors. Develop a user-friendly app in Flutter/Dart and test using Android Studio emulator. Presented the design at ASSET STEM Conference.</p>
-            <a href="https://www.youtube.com/watch?v=z7o0zlgbRYA" target="_blank">View Presentation </a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <img style="height:30%" src="images/mrna.jpg" alt="Project 2 screenshot">
-          <div class="card-content">
-            <h3>Scientific Literature Review </h3>
-            <p>Evaluated the efficacy and safety of mRNA Covid 19 vaccines compared to adenovirus vaccines and explored the benefits of
-              new mRNA vaccines' potential for application on other viruses.
-            </p>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <img style="height:30%" src="images/applanner.jpg" alt="Project 2 screenshot">
-          <div class="card-content">
-            <h3>AP Planner </h3>
-            <p>This webpage is designed to help students prepare for AP exams. The AP Exam Planner provides a dynamic platform for students to tailor their AP exam preparation. Students can configure their subjects for an academic year, enabling a focused approach. A key feature is the ability to create detailed study plans, which often incorporate the percentage weight of different topics within each subject. This helps students allocate study time effectively, prioritizing areas with higher importance. Within these plans, students can create individual tasks, breaking down their revision into manageable steps, tracking progress, and ensuring comprehensive coverage of all necessary material before their AP exams. 
-</p>
-            <a href="https://applanner.beaconits.net/login" target="_blank">View Demo</a>
-          </div>
-        </div>
-    
-        <!-- Add more project cards as needed -->
       </div>
-   
-
-</section>
-  
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: diyakamalabharathy@gmail.com</p>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Diya Kamalabharathy</p>
+ 
+  <!-- Featured Work -->
+  <section id="projects" class="relative border-t border-y border-zinc-200 bg-zinc-50/60 py-16 md:py-24">
+    <div class="mx-auto max-w-6xl px-4 md:px-6">
+      <div class="mb-10 flex items-end justify-between">
+        <div>
+          <h2 class="text-3xl font-bold tracking-tight md:text-4xl">Featured Projects</h2>
+          <p class="mt-2 text-zinc-600">Selected projects in Biology and Computer Science</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2">
+        <!-- Project Card 1 -->
+        <article class="group overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm transition hover:shadow-md">
+            <div class="relative h-56 w-full overflow-hidden bg-zinc-100">
+              <video width="600" style="height:260px;background:#000;" controls>
+                <source src="images/projects/gbm/Video1.mp4" type="video/mp4">
+                Your browser does not support the video.
+              </video>
+            </div>
+            <div class="p-5 md:p-6">
+              <div class="mb-2 inline-flex items-center gap-2 text-xs uppercase tracking-wide text-zinc-500">
+                <span class="rounded bg-zinc-100 px-2 py-0.5"> Glioblastoma</span>
+                <span class="rounded bg-zinc-100 px-2 py-0.5">Transferrin Receptor</span>
+                <span class="rounded bg-zinc-100 px-2 py-0.5">Aptamer</span>
+                <span class="rounded bg-zinc-100 px-2 py-0.5">AI</span>
+              </div>
+              <h3 class="text-xl font-semibold text-zinc-900">Research on Drug Delivery to Glioblastoma</h3>
+              <p class="mt-2 text-zinc-600">AI-Mediated Compuational Analysis of Bispecific RNA-Based Aptamers Targeting the Transferrin Receptor of Blood Brain Barrier and EpCAM in Glioblastoma</p>
+              <br/>
+              <button onclick="openModal('gbmAbstractModal')" class="rounded-lg bg-sky-600 px-4 py-2 text-white hover:bg-sky-700">View Abstract</button>
+
+                    
+              <ul class="mt-4 flex flex-wrap gap-2 text-sm text-zinc-700">
+                <li class="rounded-full border border-zinc-200 px-3 py-1">AlphaFold 3</li>
+                <li class="rounded-full border border-zinc-200 px-3 py-1">DNAFold</li>
+                <li class="rounded-full border border-zinc-200 px-3 py-1">Gromacs</li>
+                <li class="rounded-full border border-zinc-200 px-3 py-1">Molecular Dynamics3</li>
+              </ul>
+            </div>
+        </article>
+
+        <!-- Project Card 2 -->
+        <article class="group overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm transition hover:shadow-md">
+            <div class="relative h-56 w-full overflow-hidden bg-zinc-100">
+              <img src="images/projects/umbc/rho1.jpg" alt="Project 2 preview" class="h-full w-full object-cover transition duration-700 group-hover:scale-105" />
+            </div>
+            <div class="p-5 md:p-6">
+              <div class="mb-2 inline-flex items-center gap-2 text-xs uppercase tracking-wide text-zinc-500">
+                <span class="rounded bg-zinc-100 px-2 py-0.5">Rho1</span>
+                <span class="rounded bg-zinc-100 px-2 py-0.5">Drosophila melanogaster</span>
+                <span class="rounded bg-zinc-100 px-2 py-0.5">GAL4-UAS</span>
+
+              </div>
+              <h3 class="text-xl font-semibold text-zinc-900">Research on Effects of Rho1</h3>
+              <p class="mt-2 text-zinc-600">Investigating the Effect of Overexpression of Rho1 on Climbing Speed and Endurance in Drosophila melanogaster</p>
+              <br/>
+              <button onclick="openModal('umbcAbstractModal')" class="rounded-lg bg-sky-600 px-4 py-2 text-white hover:bg-sky-700">View Abstract</button>
+
+              <ul class="mt-4 flex flex-wrap gap-2 text-sm text-zinc-700">
+                <li class="rounded-full border border-zinc-200 px-3 py-1">R</li>
+                <li class="rounded-full border border-zinc-200 px-3 py-1">Statistical Analysis</li>
+              </ul>
+            </div>
+        </article>
+
+         <!-- GWU -->
+         <article class="group overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm transition hover:shadow-md md:col-span-2">
+            <a href="https://hivelab.biochemistry.gwu.edu/predictmod" target="_blank" rel="noopener" class="block md:flex md:items-stretch">
+              <div class="relative h-56 w-full overflow-hidden bg-zinc-100 md:h-auto md:w-1/2">
+                <img src="images/projects/predictmod.jpg" alt="Project 3 preview" class="h-full w-full object-cover transition duration-700 group-hover:scale-105" />
+              </div>
+              <div class="p-5 md:w-1/2 md:p-8">
+                <div class="mb-2 inline-flex items-center gap-2 text-xs uppercase tracking-wide text-zinc-500">
+                  <span class="rounded bg-zinc-100 px-2 py-0.5">Glycobiology</span>
+                  <span class="rounded bg-zinc-100 px-2 py-0.5">PredictMod</span>
+                  <span class="rounded bg-zinc-100 px-2 py-0.5">Cancer</span>
+                  <span class="rounded bg-zinc-100 px-2 py-0.5">ML</span>
+
+
+                </div>
+                <h3 class="text-xl font-semibold text-zinc-900">George Washington University - HIVE Lab</h3>
+                <p class="mt-2 text-zinc-600">Identifying relevant and useful publicly-available datasets for machine learning is currently a resource-intensive task. This curation project aims to develop a corpus for training an AI model to recommend PMIDs with publicly-available datasets useful for intervention outcome prediction models. The corpus will include an annotation spreadsheet + annotated PDFs for PubMed articles relevant to prostate, lung, breast, and liver cancer, and focus on indicators such as condition, intervention, and response.</p>
+                <ul class="mt-4 flex flex-wrap gap-2 text-sm text-zinc-700">
+                  <li class="rounded-full border border-zinc-200 px-3 py-1">JSON</li>
+                  <li class="rounded-full border border-zinc-200 px-3 py-1">HTML</li>
+                <span class="rounded bg-zinc-100 px-2 py-0.5">CSS</span>
+                <span class="rounded bg-zinc-100 px-2 py-0.5">JavaScript</span>
+                <span class="rounded bg-zinc-100 px-2 py-0.5">d3</span>
+
+                </ul>
+              </div>
+            </a>
+          </article>
+       
+
+        <!-- Project Card 3 -->
+        <article class="group overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm transition hover:shadow-md">
+            <div class="relative h-56 w-full overflow-hidden bg-zinc-100">
+              <img src="images/astrack.jpg" alt="Project 2 preview" class="h-full w-full object-cover transition duration-700 group-hover:scale-105" />
+            </div>
+            <div class="p-5 md:p-6">
+              <div class="mb-2 inline-flex items-center gap-2 text-xs uppercase tracking-wide text-zinc-500">
+                <span class="rounded bg-zinc-100 px-2 py-0.5">Mobile App</span>
+                <span class="rounded bg-zinc-100 px-2 py-0.5">Asthma</span>
+                <span class="rounded bg-zinc-100 px-2 py-0.5">Risk Factors</span>
+              </div>
+              <h3 class="text-xl font-semibold text-zinc-900">Astrack - Mobile App to Manage Asthma</h3>
+              <p class="mt-2 text-zinc-600">A comprehensive mobile app to manage and mitigate Asthma by monitoring internal and external risk factors.</p>
+            <br/>
+              <a href="https://www.youtube.com/watch?v=z7o0zlgbRYA" target="_blank" class="rounded-xl bg-sky-600 px-5 py-2.5 font-medium text-white shadow hover:bg-sky-700">View Presentation</a>
+
+              <ul class="mt-4 flex flex-wrap gap-2 text-sm text-zinc-700">
+                <li class="rounded-full border border-zinc-200 px-3 py-1">Flutter</li>
+                <li class="rounded-full border border-zinc-200 px-3 py-1">Dart</li>
+                <li class="rounded-full border border-zinc-200 px-3 py-1">Android Studio</li>
+              </ul>
+            </div>
+        </article>
+
+        <!-- Project Card 4 -->
+        <article class="group overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm transition hover:shadow-md">
+            <div class="relative h-56 w-full overflow-hidden bg-zinc-100">
+              <img src="images/myphotos/applanner1.jpg" alt="Project 2 preview" class="h-full w-full object-cover transition duration-700 group-hover:scale-105" />
+            </div>
+            <div class="p-5 md:p-6">
+              <div class="mb-2 inline-flex items-center gap-2 text-xs uppercase tracking-wide text-zinc-500">
+                <span class="rounded bg-zinc-100 px-2 py-0.5">AP Exam</span>
+                <span class="rounded bg-zinc-100 px-2 py-0.5">Web App</span>
+              </div>
+              <h3 class="text-xl font-semibold text-zinc-900">AP Planner - Web App to Plan AP Exam Prep</h3>
+              <p class="mt-2 text-zinc-600">A dynamic web application to provide a platform for students to tailor their AP exam preparation. </p>
+              <br/>
+              <a href="https://applanner.beaconits.net/login" target="_blank"  class="rounded-xl bg-sky-600 px-5 py-2.5 font-medium text-white shadow hover:bg-sky-700">View Web App</a>
+
+              <ul class="mt-4 flex flex-wrap gap-2 text-sm text-zinc-700">
+                <li class="rounded-full border border-zinc-200 px-3 py-1">HTML</li>
+                <li class="rounded-full border border-zinc-200 px-3 py-1">CSS</li>
+                <li class="rounded-full border border-zinc-200 px-3 py-1">JavaScript</li>
+              </ul>
+            </div>
+        </article>
+
+    </div>
+
+      <div class="mt-10 text-center md:hidden">
+        <a href="#all-projects" class="text-sm font-medium text-sky-700 hover:underline">View all →</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- GBM popup -->
+  <div id="gbmAbstractModal" class="fixed inset-0 hidden items-center justify-center bg-black/50 z-50">
+    <div class="bg-white max-w-5xl w-full rounded-xl shadow-lg p-6 relative">
+    <button onclick="closeModal('gbmAbstractModal');" class="absolute top-3 right-3 text-zinc-500 hover:text-zinc-700">✕</button>
+    <h3 id="modalTitle" class="text-lg font-bold mb-4"></h3>
+    <div class="slider-container">
+        <div class="slide active"><img height="300" width="400" style="align-content:center;" src="images/projects/gbm/Slide1.png"/></div>
+        <div class="slide"><img height="300" width="400"  src="images/projects/gbm/Slide2.png"/></div>
+        <div class="slide"><img height="300" width="400" src="images/projects/gbm/Slide3.png"/></div>
+        <div class="slide"><img height="300" width="400" src="images/projects/gbm/Slide4.png"/></div>
+        <div class="slide"><img height="300" width="400" src="images/projects/gbm/Slide5.png"/></div>
+        <div class="slide"><img height="300" width="400" src="images/projects/gbm/Slide6.png"/></div>
+
+        <button class="nav-arrow prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="nav-arrow next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+    <p id="gbmAbstractModalContent" class="text-zinc-700 leading-relaxed">
+    
+        <span class="font-bold">AI-Mediated Computational Analysis of Bispecific RNA-Based Aptamers Transferrin Receptor of Blood Brain Barrier and EpCAM in Glioblastoma</span>
+            <br/>
+            <span class="font-medium underline">Diya Kamalabharathy</span><span class="font-light">, Poolesville High School, Poolesville, MD           
+            </span>
+            <br/><br/>
+            <span class="font-normal">
+            Glioblastoma Multiforme (GBM) is an aggressive and highly malignant type of brain cancer that forms in the brain's glial cells. Targeting the glioblastoma cells is challenging due to the blood-brain barrier (BBB). This highly selective membran-e separates brain blood vessels from the surrounding environment and is essential in regulating substances in the brain’s capillaries. Transferrin Receptors (TfR) have shown promising results in mediating drug transport across the BBB. Aptamers are nucleic acids modified to possess specific characteristics such as higher binding affinity and specificity. This research aims to design bispecific aptamers that can cross the BBB using TfR and later bind to the overexpressed EpCAM receptor on glioblastoma cells. I hypothesize that drug-bound aptamers can be used as transporting agents that first bind to the TfR, mimicking transferrin protein, and subsequently transport the drug and aptamer across the BBB. This work uses AI and computational simulation techniques to decipher the binding interactions between the TfR and the respective aptamers. Initially, to find the binding site, I first predicted the structure of the transferrin receptors by modeling them using the AlphaFold 3. In the next step, I elucidated the structure of four potential aptamers utilizing the DNAfold and FARFAR2 software. The 3D-modeled aptamers were finally docked on the TfR to understand the binding interactions using the HDOCK2.0 software. The molecular docking results and the aptamer binding site are further validated using a deep cleaning-based method called ScanNet. Finally, I analyzed and found the best binding site and mapped the bonds using the PLIP Observer. I also examined the binding energy of each aptamer to the transferrin receptor using PDA- Pred. I used three parameters to select the aptamers: visual inspection of TfR-aptamer complexes, number of interactions, and binding affinity. The results depicted that aptamer hmBS04 made the most substantial interaction and could be used for the TfR binding. The current results will pave the way for designing bispecific aptamers to cross the blood-brain barrier and target EpCAM-positive cancer cells, leading to targeted glioblastoma therapy.
+            </span>
+            <br/>
+            <span class="font-medium">
+                Keywords:  </span><span class="font-light">Glioblastoma, Transferrin Receptor (TfR), Aptamer, Deep Learning, AlphaFold 3
+           </span>
+        </p>
+    </div>
+  </div>
+
+
+
+
+    <!-- UMBC popup -->
+    <div id="umbcAbstractModal" class="fixed inset-0 hidden items-center justify-center bg-black/50 z-50">
+        <div class="bg-white max-w-5xl w-full rounded-xl shadow-lg p-10 relative">
+        <button onclick="closeModal('umbcAbstractModal');" class="absolute top-3 right-3 text-zinc-500 hover:text-zinc-700">✕</button>
+        <h3 id="umbcModalTitle" class="text-2xl font-bold mb-4"></h3>
+        <p id="umbcAbstractModalContent" class="text-zinc-700 leading-relaxed">
+            <span class="font-bold">INVESTIGATING THE EFFECT OF OVEREXPRESSION OF RHO1 ON CLIMBING SPEED AND ENDURANCE IN DROSOPHILA MELANOGASTER</span>
+            <br/><br/>
+            <span class="font-medium underline">Diya Kamalabharathy</span><sup class="text-sm font-light">1</sup>, 
+            <span class="font-medium underline">Evangeline Chen</span><sup class="text-sm font-light">2</sup>, 
+            <span class="font-medium underline">Kenny Nguyen</span><sup class="text-sm font-light">3</sup>, 
+            Dr. Jeff Leips<sup class="text-sm font-light">4</sup> <br/>
+            <sup class="text-sm font-light">1</sup>Poolesville High School, 17501 W Willard Rd, Poolesville, MD 20837 <br/>
+            <sup class="text-sm font-light">2</sup>University of Maryland, College Park, MD, 20742 <br/>
+            <sup class="text-sm font-light">3</sup>Broadneck High School, 1265 Green Holly Dr, Annapolis, MD 21409 <br/>
+            <sup class="text-sm font-light">4</sup>Department of Biological Sciences, University of Maryland, Baltimore County, 1000 Hilltop Circle, Baltimore, MD, 21250 <br/>
+            </span>
+            <br/>
+            <span class="font-normal">
+            The Rho1 gene has been identified through a genome-wide analysis as a candidate gene affecting physical performance in Drosophila melanogaster. Rho1 is an evolutionarily conserved gene that encodes for proteins in the family of GTPases, which play a key role in the regulation of actin dynamics and wound healing, and therefore potentially impact physical performance. We studied the effect of the Rho1 gene on climbing speed and endurance by manipulating Rho1 expression in the muscle tissue of the fly by utilizing the GAL4-UAS system. Virgin females of the muscle-GAL4 line were crossed with males of the UAS overexpressed Rho1 responder line and males of a control line. We measured the climbing speed and endurance of the offspring of these crosses. This experiment aims to determine whether Rho1 overexpression in muscle tissue influences locomotor performance, including speed and endurance. We hypothesize that an overexpression of the Rho1 gene within flies will have a statistically significant influence on their speed and endurance compared to the control line. The results of our experiment will provide insight into the significance of the Rho1 gene in the physical ability of Drosophila melanogaster, which may suggest the role the human orthologs of Rho1 play in physical performance in humans. This could help enhance personalized healthcare as it relates to physical decline and conditions such as myopathy and muscular dystrophy. If the Rho1 gene is found to affect physical performance in Drosophila melanogaster, further research is needed to determine the underlying mechanisms behind this effect. Future research should investigate the gene’s effect on other tissues and age groups, given that Rho1 has been characterized as an age-specific gene in a genome-wide analysis of Drosophila melanogaster.
+            </span>
+            <br/>
+            <span class="font-light">
+            Support for this research was provided by the Department of Biological Sciences at the University of Maryland, Baltimore County. 
+            </span>
+            
+        </p>
+        </div>
+      </div>
+
+
+<!-- Image Modal -->
+<div id="imgModal" class="modal" onclick="closeImageModal()">
+    <img id="fullImage">
+  </div>
+
+  <!-- Skills / Stack -->
+  <section id="awards" class="relative border-y border-zinc-200 bg-zinc-50/60 py-16 md:py-24">
+    <div class="mx-auto max-w-6xl px-4 md:px-6">
+      <h2 class="text-3xl font-bold tracking-tight md:text-4xl">Awards</h2>
+      <div class="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
+        <aside class="md:col-span-3">
+            <div class="overflow-hidden rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
+            <ul class="mt-4 space-y-3 text-sm text-zinc-700">
+                <h3 class="text-lg font-semibold">Science / Research</h3>
+                <li>🏆 HOSA State - 1st in Research Poster & 3rd in Behavioral Health</li>
+                <li>🏆 National JSHS - 3rd in poster presentation</li>
+                <li>🏆 Science Fair - 3rd in Biology Category</li>
+                <li>🏆 Science Olympiad - 1st in UMBC Invitational and 3rd in Regional</li>
+                <li>🏆 James Phang Aspiring Scientist Award (2nd Place)</li>
+                <li>🏆 Graduate Women in Science - National Capital Chapter</li>
+                <li>🏆 US Public Health Service’s Achievement Award</li>
+            </ul>
+            </div>
+        </aside>
+        <aside class="md:col-span-3">
+            <div class="overflow-hidden rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
+            <ul class="mt-4 space-y-3 text-sm text-zinc-700">
+                <h3 class="text-lg font-semibold">Volunteering</h3>
+                <li>🏆 President Volunteer Service Gold Award - 3 years in a row </li>
+                <li>🏆 American Citizenship Award</li>
+                <li>🏆 American Red Cross Volunteer Service Award</li>
+            </ul>
+            </div>
+       
+       
+            <div class="overflow-hidden rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
+            <ul class="mt-4 space-y-3 text-sm text-zinc-700">
+                <h3 class="text-lg font-semibold">Leadership</h3>
+                <li>🏆 Leadership Award - World Karate Federation </li>
+            </ul>
+            </div>
+        </aside>
+        <aside class="md:col-span-3">
+            <div class="overflow-hidden rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
+            <ul class="mt-4 space-y-3 text-sm text-zinc-700">
+                <h3 class="text-lg font-semibold">Literature / Music</h3>
+                <li>🏆 Montgomery County PTAs - 1st place in Literature </li>
+                <li>🏆 Montgomery County PTAs - Award of Excellence</li>
+                <li>🏆 National Guild Auditions in Piano </li>
+
+            </ul>
+            </div>
+        </aside>
+        <aside class="md:col-span-3">
+            <div class="overflow-hidden rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
+            <ul class="mt-4 space-y-3 text-sm text-zinc-700">
+                <h3 class="text-lg font-semibold">Others</h3>
+                <li>🏆 AP Scholar with Distinction</li>
+                <li>🏆 National Top School Recognition</li>
+                <li>🏆 National Rural and Small Town Recognition</li>
+            </ul>
+            </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  
+<!-- HOSA -->
+<section id="leadership" class="relative border-y border-zinc-200 bg-zinc-50/60 py-16 md:py-24">
+    <div class="mx-auto max-w-6xl px-4 md:px-6">
+        <h2 class="text-3xl font-bold tracking-tight md:text-4xl">Leadership</h2>
+        <div class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
+        <!-- Post card -->
+        <article class="group rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm transition hover:shadow-md">
+            <img width="600" style="height:160px;" src="images/myphotos/Hosa_2024.jpg" alt="Volunteering @ Asbury" onclick="openImageModal(this)"/>
+            <br/><h3 class="text-xl font-semibold text-zinc-900">HOSA State Vice President of Communications</h3>
+            <p class="mt-2 text-zinc-600">Direct meetings and manage events; Facilitate workshops at HOSA Leadership Conference</p>
+        </article>
+        <article class="group rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm transition hover:shadow-md">
+            <img width="600" style="height:160px;" src="" alt="NHS" onclick="openImageModal(this)"/>
+            <br/><h3 class="text-xl font-semibold text-zinc-900">National Honors Society Vice President of Service</h3>
+            <p class="mt-2 text-zinc-600">Plan and implement monthly service projects, coordinating with committees</p>
+        </article>
+        <article class="group rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm transition hover:shadow-md">
+            <img width="600" style="height:160px;" src="" alt="Science Olympiad Team Captain" onclick="openImageModal(this)"/>
+            <br/><h3 class="text-xl font-semibold text-zinc-900">Science Olympiad Team Captain</h3>
+            <p class="mt-2 text-zinc-600">A cohesive design system and component library used across 5 internal apps, reducing UI bugs by 40%.</p>
+        </article>
+        </div>
+
+        <div class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
+            <!-- Post card -->
+            
+            <article class="group rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm transition hover:shadow-md">
+                <img width="600" style="height:160px;" src="images/myphotos/openmic.jpg" alt="Founder & President - Songwriters Circle Club" onclick="openImageModal(this)"/>
+                <br/><h3 class="text-xl font-semibold text-zinc-900">Founder and President of Songwriters Circle Club</h3>
+                <p class="mt-2 text-zinc-600">Organize open mic sessions during school lunch hour, growing the club to 100+ members</p>
+            </article>
+            <article class="group rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm transition hover:shadow-md">
+                <img width="600" style="height:160px;" src="images/myphotos/Karate_chokehold.jpg" alt="Self-defense Seminar Leader" onclick="openImageModal(this)"/>
+                <br/><h3 class="text-xl font-semibold text-zinc-900">Self-Defense Advocate</h3>
+                <p class="mt-2 text-zinc-600">A cohesive design system and component library used across 5 internal apps, reducing UI bugs by 40%.</p>
+            </article>
+            <article class="group rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm transition hover:shadow-md">
+                <img width="600" style="height:160px;" src="images/myphotos/Masti_1.jpg" alt="Team Captain - Masti Dance Club" onclick="openImageModal(this)"/>
+                <br/><h3 class="text-xl font-semibold text-zinc-900">Masti Dance Team Captain</h3>
+                <p class="mt-2 text-zinc-600">A cohesive design system and component library used across 5 internal apps, reducing UI bugs by 40%.</p>
+            </article>
+        </div>
+    </div>
+    </section>
+
+
+    <section id="mentor" class="relative border-y border-zinc-200 bg-zinc-50/60 py-16 md:py-24">
+        <div class="mx-auto max-w-6xl px-4 md:px-6">
+          <div class="grid items-start gap-10 md:grid-cols-5">
+            <div class="md:col-span-4">
+              <h2 class="text-3xl font-bold tracking-tight md:text-4xl">Clinical Internships</h2>
+              
+              <p class="mt-6 text-zinc-700">During summer break, I volunteer at hospitals to shadow doctors and gain clinical experience.</p>
+              <div class="mt-6 grid grid-cols-1 gap-6 md:grid-cols-4">
+                <article class="group rounded-lg border border-zinc-200 bg-white p-6 shadow-sm transition hover:shadow-md">
+                    <img width="600" style="height:160px;" src="images/projects/washeye.jpg" alt="Self-defense Seminar Leader" onclick="openImageModal(this)"/>
+                    <div class="mt-6 flex flex-wrap gap-3 text-sm">
+                        <a href="https://www.washingtoneyeconsultants.com/" target="_blank" class="rounded-xl border border-zinc-300 px-4 py-2 hover:border-zinc-400">Washingon Eye Consultants</a>
+                    </div>
+                </article>
+                <article class="group rounded-lg border border-zinc-200 bg-white p-6 shadow-sm transition hover:shadow-md">
+                    <img width="600" style="height:160px;" src="images/projects/walter reed.jpg" alt="Self-defense Seminar Leader" onclick="openImageModal(this)"/>
+                    <div class="mt-6 flex flex-wrap gap-3 text-sm">
+                        <a href="https://walterreed.tricare.mil/About-Us" target="_blank" rel="noopener" class="rounded-xl border border-zinc-300 px-4 py-2 hover:border-zinc-400">Walter Reed Military National Medical Center</a>
+                    </div>
+                </article>         
+
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+  <!-- Writing -->
+  <section id="volunteering" class="relative border-y border-zinc-200 bg-zinc-50/60 py-16 md:py-24">
+    <div class="mx-auto max-w-6xl px-4 md:px-6">
+      <h2 class="text-3xl font-bold tracking-tight md:text-4xl">Volunteer</h2>
+      <div class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
+        <!-- Post card -->
+        <article class="group rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm transition hover:shadow-md">
+            <img width="600" style="height:160px;" src="images/myphotos/asbury_1.jpg" alt="Ensemble Leader @ Asbury" onclick="openImageModal(this)"/>
+            <br/><h3 class="text-xl font-semibold text-zinc-900">Ensemble Leader </h3>
+            <p class="mt-2 text-zinc-600">Monthly piano and vocal concerts for elderly at Asbury senior living</p>
+        </article>
+        <article class="group rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm transition hover:shadow-md">
+            <img width="600" style="height:160px;" src="" alt="Hospital Volunteer @ Shady Grove" onclick="openImageModal(this)"/>
+            <br/><h3 class="text-xl font-semibold text-zinc-900">Hospital Volunteer</h3>
+            <p class="mt-2 text-zinc-600">Comfort patients and support medical staff at Shady Grove Hospital<br/>
+            </p>
+        </article>
+        <article class="group rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm transition hover:shadow-md">
+            <img width="600" style="height:160px;" src="images/projects/redcross.jpg" alt="Blood Drive Ambassador @ Red Cross" onclick="openImageModal(this)"/>
+            <br/><h3 class="text-xl font-semibold text-zinc-900">Blood Drive Ambassador</h3>
+            <p class="mt-2 text-zinc-600">Monthly blood drives at American Red Cross</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="relative border-y border-zinc-200 bg-zinc-50/60 py-16 md:py-24">
+    <div class="mx-auto max-w-6xl px-4 md:px-6">
+      <div class="grid items-center gap-8 md:grid-cols-3">
+        <div class="md:col-span-2">
+          <h2 class="text-3xl font-bold tracking-tight md:text-4xl">Say hello</h2>
+          <p class="mt-2 text-zinc-600">Want to collaborate? I read every message.</p>
+          <div class="mt-6 flex flex-wrap items-center gap-3 text-sm">
+            <form class="contact-form" action="https://formspree.io/f/mblaypwr" method="POST">
+            <label> Your email:
+              <input type="email" name="email" required>
+            </label>
+            <label> Your message:
+              <textarea name="message" required></textarea>
+            </label>
+            <!-- your other form fields go here -->
+            <button type="submit" class="rounded-xl bg-sky-600 px-5 py-2.5 font-medium text-white shadow hover:bg-sky-700">Email me</button>
+            
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10">
+    <div class="mx-auto max-w-6xl px-4 md:px-6 text-sm text-zinc-500">
+      <div class="flex flex-col items-center justify-between gap-4 sm:flex-row">
+        <p>© <span id="year"></span> Diya Kamalabharathy. All rights reserved.</p>
+        <div class="flex items-center gap-4">
+          <a href="#home" class="hover:underline">Back to top ↑</a>
+        </div>
+      </div>
+    </div>
   </footer>
+
+  <!-- Dark mode styles (class-based) -->
+  <script>
+    // Theme: respect system + remember choice
+    const root = document.documentElement;
+    const saved = localStorage.getItem('theme');
+    const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const applyTheme = (mode) => {
+      if (mode === 'dark') {
+        root.classList.add('dark');
+        document.body.classList.add('bg-zinc-900','text-zinc-100');
+        document.body.classList.remove('bg-white','text-zinc-900');
+      } else {
+        root.classList.remove('dark');
+        document.body.classList.remove('bg-zinc-900','text-zinc-100');
+        document.body.classList.add('bg-white','text-zinc-900');
+      }
+    }
+    applyTheme(saved || (systemDark ? 'dark' : 'light'));
+
+    document.getElementById('themeToggle').addEventListener('click', () => {
+      const isDark = root.classList.contains('dark');
+      applyTheme(isDark ? 'light' : 'dark');
+      localStorage.setItem('theme', isDark ? 'light' : 'dark');
+    });
+
+    // Set year and reveal body
+    document.getElementById('year').textContent = new Date().getFullYear();
+    window.addEventListener('load', () => document.body.classList.add('ready'));
+  </script>
+
+  <!-- Minimal JSON-LD for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Diya Kamalabharathy",
+    "url": "https://yourdomain.com",
+    "sameAs": [
+      "https://github.com/yourname",
+      "https://www.linkedin.com/in/yourname"
+    ],
+    "jobTitle": "Software Engineer",
+    "description": "Portfolio of Diya Kamalabharathy — projects, writing, and contact."
+  }
+  </script>
 </body>
 </html>
