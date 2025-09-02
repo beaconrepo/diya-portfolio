@@ -256,17 +256,18 @@
 
 
   <!-- GBM popup -->
-  <div id="gbmAbstractModal" class="fixed inset-0 hidden items-center justify-center bg-black/50 z-50">
-    <div class="bg-white max-w-5xl w-full rounded-xl shadow-lg p-6 relative">
+  <div id="gbmAbstractModal" class="fixed inset-0 hidden items-center justify-center bg-black/50 z-50 overflow-auto">
+    <div class="bg-white p-6 rounded-lg max-h-[80vh] shadow-lg overflow-y-auto w-[80%]">
+
     <button onclick="closeModal('gbmAbstractModal');" class="absolute top-3 right-3 text-zinc-500 hover:text-zinc-700">✕</button>
     <h3 id="modalTitle" class="text-lg font-bold mb-4"></h3>
     <div class="slider-container">
-        <div class="slide active"><img height="300" width="400" style="align-content:center;" src="images/projects/gbm/Slide1.png"/></div>
-        <div class="slide"><img height="300" width="400"  src="images/projects/gbm/Slide2.png"/></div>
-        <div class="slide"><img height="300" width="400" src="images/projects/gbm/Slide3.png"/></div>
-        <div class="slide"><img height="300" width="400" src="images/projects/gbm/Slide4.png"/></div>
-        <div class="slide"><img height="300" width="400" src="images/projects/gbm/Slide5.png"/></div>
-        <div class="slide"><img height="300" width="400" src="images/projects/gbm/Slide6.png"/></div>
+        <div class="slide active"><img height="400" width="500" style="align-content:center;" src="images/projects/gbm/Slide1.png"/></div>
+        <div class="slide"><img height="400" width="500"  src="images/projects/gbm/Slide2.png"/></div>
+        <div class="slide"><img height="400" width="500" src="images/projects/gbm/Slide3.png"/></div>
+        <div class="slide"><img height="400" width="500" src="images/projects/gbm/Slide4.png"/></div>
+        <div class="slide"><img height="400" width="500" src="images/projects/gbm/Slide5.png"/></div>
+        <div class="slide"><img height="400" width="500" src="images/projects/gbm/Slide6.png"/></div>
 
         <button class="nav-arrow prev" onclick="changeSlide(-1)">&#10094;</button>
         <button class="nav-arrow next" onclick="changeSlide(1)">&#10095;</button>
@@ -294,7 +295,8 @@
 
     <!-- UMBC popup -->
     <div id="umbcAbstractModal" class="fixed inset-0 hidden items-center justify-center bg-black/50 z-50">
-        <div class="bg-white max-w-5xl w-full rounded-xl shadow-lg p-10 relative">
+        <div class="bg-white p-6 rounded-lg max-h-[80vh] shadow-lg overflow-y-auto w-[80%]">
+
         <button onclick="closeModal('umbcAbstractModal');" class="absolute top-3 right-3 text-zinc-500 hover:text-zinc-700">✕</button>
         <h3 id="umbcModalTitle" class="text-2xl font-bold mb-4"></h3>
         <p id="umbcAbstractModalContent" class="text-zinc-700 leading-relaxed">
