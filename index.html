@@ -257,9 +257,12 @@
 
   <!-- GBM popup -->
   <div id="gbmAbstractModal" class="fixed inset-0 hidden items-center justify-center bg-black/50 z-50 overflow-auto">
-    <div class="bg-white p-6 rounded-lg max-h-[80vh] shadow-lg overflow-y-auto w-[80%]">
-
-    <button onclick="closeModal('gbmAbstractModal');" class="absolute top-3 right-3 text-zinc-500 hover:text-zinc-700">✕</button>
+  <!-- Modal Box -->
+  <div class="relative bg-white p-6 rounded-lg max-h-[80vh] overflow-y-auto w-[80%]">
+    <!-- Close Button inside the box -->
+    <button onclick="closeModal('gbmAbstractModal')" class="absolute top-2 right-2 text-gray-500 hover:text-black text-2xl font-bold leading-none">
+      &times;
+    </button>
     <h3 id="modalTitle" class="text-lg font-bold mb-4"></h3>
     <div class="slider-container">
         <div class="slide active"><img height="400" width="500" style="align-content:center;" src="images/projects/gbm/Slide1.png"/></div>
@@ -294,10 +297,14 @@
 
 
     <!-- UMBC popup -->
-    <div id="umbcAbstractModal" class="fixed inset-0 hidden items-center justify-center bg-black/50 z-50">
-        <div class="bg-white p-6 rounded-lg max-h-[80vh] shadow-lg overflow-y-auto w-[80%]">
+    <div id="umbcAbstractModal" class="fixed inset-0 hidden items-center justify-center bg-black/50 z-50 overflow-auto">
+      <!-- Modal Box -->
+      <div class="relative bg-white p-6 rounded-lg max-h-[80vh] overflow-y-auto w-[80%]">
+        <!-- Close Button inside the box -->
+        <button onclick="closeModal('umbcAbstractModal')" class="absolute top-2 right-2 text-gray-500 hover:text-black text-2xl font-bold leading-none">
+          &times;
+        </button>
 
-        <button onclick="closeModal('umbcAbstractModal');" class="absolute top-3 right-3 text-zinc-500 hover:text-zinc-700">✕</button>
         <h3 id="umbcModalTitle" class="text-2xl font-bold mb-4"></h3>
         <p id="umbcAbstractModalContent" class="text-zinc-700 leading-relaxed">
             <span class="font-bold">INVESTIGATING THE EFFECT OF OVEREXPRESSION OF RHO1 ON CLIMBING SPEED AND ENDURANCE IN DROSOPHILA MELANOGASTER</span>
