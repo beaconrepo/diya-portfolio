@@ -102,3 +102,10 @@
     max-width: 90%; max-height: 90%;
     border-radius: 8px;
   }
+
+
+  .credit {
+  font-size: 0.8rem;
+  color: #666;
+  text-align: center;
+}
